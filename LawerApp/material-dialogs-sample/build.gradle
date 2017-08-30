@@ -1,0 +1,52 @@
+apply from: '../materialdialogsdependencies.gradle'
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'me.tatarka:gradle-retrolambda:3.6.0'
+    }
+}
+
+apply plugin: 'com.android.application'
+apply plugin: 'me.tatarka.retrolambda'
+
+android {
+    compileSdkVersion compileSdk
+    buildToolsVersion buildTools
+
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    defaultConfig {
+        applicationId "com.afollestad.materialdialogssample"
+        minSdkVersion minSdk
+        targetSdkVersion targetSdk
+        versionCode versions.publishVersionCode
+        versionName versions.publishVersion
+    }
+    lintOptions {
+        abortOnError false
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            shrinkResources false
+        }
+    }
+}
+
+dependencies {
+    compile project(':material-dialogs-core')
+    compile project(':material-dialogs-commons')
+
+    compile 'com.android.support:gridlayout-v7:' + support_library_version
+
+    compile 'com.jakewharton:butterknife:' + versions.butterKnife
+    annotationProcessor 'com.jakewharton:butterknife-compiler:' + versions.butterKnife
+
+    compile 'com.facebook.stetho:stetho:1.4.2'
+}

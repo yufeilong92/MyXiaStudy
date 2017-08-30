@@ -1,0 +1,118 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.lawyee.appservice.ui.frag.jamedFeedBackFragment">
+
+    <TextView
+        style="@style/TextTitle"
+        android:text="@string/jamed_feekbackinfom" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/boundary_16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/icon_tv_stars"
+            android:text="@string/jamed_isSuccess"
+            android:textColor="@color/color_hei"
+            android:textSize="@dimen/text_size_medium" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/boundary_16dp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/boundary_16dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rdb_jamed_fbsuccess"
+                style="@style/RadioBtn"
+                android:text="@string/success" />
+            <RadioButton
+                android:id="@+id/rdb_jamed_fbfail"
+                style="@style/RadioBtn"
+                android:text="@string/fail" />
+        </RadioGroup>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/boundary_16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/icon_tv_stars"
+            android:text="@string/jamed_fbdata"
+            android:textColor="@color/color_hei"
+            android:textSize="@dimen/text_size_medium" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/boundary_16dp" />
+         <TextView
+             android:id="@+id/tv_jaemd_finishData"
+             android:hint="点击选择结束时间"
+             style="@style/Tv_Input"
+             />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/boundary_16dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/icon_tv_stars"
+            android:text="@string/jamed_judicial_notice"
+            android:textColor="@color/color_hei"
+            android:textSize="@dimen/text_size_medium" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/boundary_16dp" />
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/boundary_16dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rdb_jamed_fbyes"
+                style="@style/RadioBtn"
+                android:text="@string/yes" />
+
+
+            <RadioButton
+                android:id="@+id/rdb_jamed_fbno"
+                style="@style/RadioBtn"
+                android:text="@string/no" />
+        </RadioGroup>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/boundary_16dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/jamed_upload"
+            android:textColor="@color/color_hei"
+            android:textSize="@dimen/text_size_medium" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/boundary_16dp" />
+        <TextView
+            android:id="@+id/tv_jamed_uploadfb"
+            android:hint="@string/jamed_uploadfb"
+            style="@style/Tv_Input" />
+         <Button
+             android:id="@+id/btn_jamed_Sumbit"
+             android:text="@string/submit"
+             style="@style/btnSubmit"/>
+    </LinearLayout>
+
+</LinearLayout>

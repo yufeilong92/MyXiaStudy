@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_white"
+    android:orientation="vertical"
+    tools:context="com.lawyee.appservice.ui.frag.JaaidAppointInfomFragment">
+
+    <TextView
+        style="@style/TextTitle"
+        android:text="@string/jaaid_appoint" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/boundary_16dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_jaaidselectlawfirms"
+            style="@style/Tv_Input"
+            android:hint="@string/jaaid_pleasefirms" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/boundary_16dp" />
+
+        <TextView
+            android:id="@+id/tv_jaaidselectlawyer"
+            style="@style/Tv_Input"
+            android:hint="@string/jaaid_pleaselawyer" />
+
+        <Button
+            android:id="@+id/btn_jaaidlawsumbit"
+            style="@style/btnSubmit"
+            android:text="@string/submit" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,36 @@
+apply plugin: 'com.android.library'
+apply from: '../materialdialogsdependencies.gradle'
+
+ext {
+    PUBLISH_GROUP_ID = 'com.afollestad.material-dialogs'
+    PUBLISH_ARTIFACT_ID = 'commons'
+    PUBLISH_VERSION = versions.publishVersion
+}
+
+android {
+    compileSdkVersion compileSdk
+    buildToolsVersion buildTools
+
+    defaultConfig {
+        minSdkVersion minSdk
+        targetSdkVersion targetSdk
+        versionCode versions.publishVersionCode
+        versionName versions.publishVersion
+    }
+    lintOptions {
+        abortOnError false
+        checkReleaseBuilds false
+    }
+    sourceSets {
+        main.res.srcDirs = [
+            'src/main/res',
+            'src/main/res-public'
+        ]
+    }
+}
+
+dependencies {
+    compile 'com.android.support:support-v13:' + support_library_version
+    compile 'com.android.support:appcompat-v7:' + support_library_version
+    compile project(':material-dialogs-core')
+}

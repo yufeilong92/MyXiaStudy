@@ -1,0 +1,304 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    android:scrollbarThumbVertical="@android:color/transparent"
+    tools:context="com.lawyee.appservice.ui.frag.JaauthDetailFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/boundary_8dp">
+
+        <LinearLayout style="@style/Linearlayout">
+
+            <LinearLayout style="@style/LinearLayoutShowLife">
+
+                <TextView
+                    style="@style/TextShowLife"
+                    android:text="@string/jaauth_cardtype" />
+            </LinearLayout>
+
+            <TextView style="@style/TextShowContent" />
+
+            <TextView
+                android:id="@+id/tv_jaauth_Jaauthcardtype"
+                style="@style/TextShowRight" />
+        </LinearLayout>
+
+        <View style="@style/viewstyle" />
+
+        <LinearLayout style="@style/Linearlayout">
+
+            <LinearLayout style="@style/LinearLayoutShowLife">
+
+                <TextView
+                    style="@style/TextShowLife"
+                    android:layout_height="wrap_content"
+                    android:text="@string/jaauth_EntrustWork" />
+            </LinearLayout>
+
+            <TextView style="@style/TextShowContentNoIcon" />
+
+            <TextView
+                android:id="@+id/tv_jaauth_applyEntrustWork"
+                style="@style/TextShowRight" />
+        </LinearLayout>
+
+        <View style="@style/viewstyle" />
+
+        <LinearLayout style="@style/Linearlayout">
+
+            <LinearLayout style="@style/LinearLayoutShowLife">
+
+                <TextView
+                    style="@style/TextShowLife"
+                    android:text="@string/applyname" />
+            </LinearLayout>
+
+            <TextView style="@style/TextShowContent" />
+
+            <TextView
+                android:id="@+id/tv_jaauth_applyname"
+                style="@style/TextShowRight" />
+        </LinearLayout>
+
+        <View style="@style/viewstyle" />
+
+        <LinearLayout style="@style/Linearlayout">
+
+            <LinearLayout style="@style/LinearLayoutShowLife">
+
+                <TextView
+                    style="@style/TextShowLife"
+                    android:text="@string/sex" />
+            </LinearLayout>
+
+            <TextView style="@style/TextShowContent" />
+
+            <TextView
+                android:id="@+id/tv_jaauth_applysex"
+                style="@style/TextShowRight" />
+        </LinearLayout>
+
+        <View style="@style/viewstyle" />
+
+        <LinearLayout style="@style/Linearlayout">
+
+            <LinearLayout style="@style/LinearLayoutShowLife">
+
+                <TextView
+                    style="@style/TextShowLife"
+                    android:text="@string/cardtype" />
+            </LinearLayout>
+
+            <TextView style="@style/TextShowContent" />
+
+            <TextView
+                android:id="@+id/tv_jaauth_applycardtype"
+                style="@style/TextShowRight" />
+        </LinearLayout>
+
+        <View style="@style/viewstyle" />
+
+        <LinearLayout style="@style/Linearlayout">
+
+            <LinearLayout style="@style/LinearLayoutShowLife">
+
+                <TextView
+                    style="@style/TextShowLife"
+                    android:text="@string/cardnumber" />
+            </LinearLayout>
+
+            <TextView style="@style/TextShowContent" />
+
+            <TextView
+                android:id="@+id/tv_jaauth_applycardnumber"
+                style="@style/TextShowRight" />
+        </LinearLayout>
+
+        <View style="@style/viewstyle" />
+
+        <LinearLayout style="@style/Linearlayout">
+
+            <LinearLayout style="@style/LinearLayoutShowLife">
+
+                <TextView
+                    style="@style/TextShowLife"
+                    android:text="@string/brithday" />
+            </LinearLayout>
+
+            <TextView style="@style/TextShowContentNoIcon" />
+
+            <TextView
+                android:id="@+id/tv_jaauth_applybrithday"
+                style="@style/TextShowRight" />
+        </LinearLayout>
+
+        <View style="@style/viewstyle" />
+
+        <LinearLayout style="@style/Linearlayout">
+
+            <LinearLayout style="@style/LinearLayoutShowLife">
+
+                <TextView
+                    style="@style/TextShowLife"
+                    android:text="@string/jaauth_ApplyAbility" />
+            </LinearLayout>
+
+            <TextView style="@style/TextShowContent" />
+
+            <TextView
+                android:id="@+id/tv_jaauth_applyApplyAbility"
+                style="@style/TextShowRight" />
+        </LinearLayout>
+
+        <View style="@style/viewstyle" />
+
+        <LinearLayout style="@style/Linearlayout">
+
+            <LinearLayout style="@style/LinearLayoutShowLife">
+
+                <TextView
+                    style="@style/TextShowLife"
+                    android:text="@string/jaauth_DaiName" />
+            </LinearLayout>
+
+            <TextView style="@style/TextShowContentNoIcon" />
+
+            <TextView
+                android:id="@+id/tv_jaauth_applyDaiName"
+                style="@style/TextShowRight" />
+        </LinearLayout>
+
+        <View style="@style/viewstyle" />
+
+        <LinearLayout style="@style/Linearlayout">
+
+            <LinearLayout style="@style/LinearLayoutShowLife">
+
+                <TextView
+                    style="@style/TextShowLife"
+                    android:text="@string/jaaut_DaiCardNumber" />
+            </LinearLayout>
+
+            <TextView style="@style/TextShowContentNoIcon" />
+
+            <TextView
+                android:id="@+id/tv_jaauth_applyDaiCardNumber"
+                style="@style/TextShowRight" />
+        </LinearLayout>
+
+        <View style="@style/viewstyle" />
+
+        <LinearLayout style="@style/Linearlayout">
+
+            <LinearLayout style="@style/LinearLayoutShowLife">
+
+                <TextView
+                    style="@style/TextShowLife"
+                    android:text="@string/jaauth_item" />
+            </LinearLayout>
+
+            <TextView style="@style/TextShowContent" />
+
+            <TextView
+                android:id="@+id/tv_jaauth_applyitem"
+                style="@style/TextShowRight" />
+        </LinearLayout>
+
+        <View style="@style/viewstyle" />
+
+        <LinearLayout style="@style/Linearlayout">
+
+            <LinearLayout style="@style/LinearLayoutShowLife">
+
+                <TextView
+                    style="@style/TextShowLife"
+                    android:text="@string/jaauth_introduction" />
+            </LinearLayout>
+
+            <TextView style="@style/TextShowContentNoIcon" />
+
+            <TextView
+                android:id="@+id/tv_jaauth_applyIntroduction"
+                style="@style/TextShowRight" />
+        </LinearLayout>
+
+        <View style="@style/viewstyle" />
+
+        <LinearLayout style="@style/Linearlayout">
+
+            <LinearLayout style="@style/LinearLayoutShowLife">
+
+                <TextView
+                    style="@style/TextShowLife"
+                    android:text="@string/jaauth_JieLunInfom" />
+            </LinearLayout>
+
+            <TextView style="@style/TextShowContentNoIcon" />
+
+            <TextView
+                android:id="@+id/tv_jaauth_applyJieLunInfom"
+                style="@style/TextShowRight" />
+        </LinearLayout>
+
+        <View style="@style/viewstyle" />
+
+        <LinearLayout style="@style/Linearlayout">
+
+            <LinearLayout style="@style/LinearLayoutShowLife">
+
+                <TextView
+                    style="@style/TextShowLife"
+                    android:text="@string/jaauth_material_list" />
+            </LinearLayout>
+
+            <TextView style="@style/TextShowContent" />
+
+            <TextView
+                android:id="@+id/tv_jaauth_applyMateriallist"
+                style="@style/TextShowRight"
+                android:textColor="@color/text_color" />
+        </LinearLayout>
+
+        <View style="@style/viewstyle" />
+
+        <LinearLayout style="@style/Linearlayout">
+
+            <LinearLayout style="@style/LinearLayoutShowLife">
+                <TextView
+                    style="@style/TextShowLife"
+                    android:text="@string/jaaut_BookNumber" />
+            </LinearLayout>
+
+            <TextView style="@style/TextShowContent" />
+
+            <TextView
+                android:id="@+id/tv_jaauth_applyBookNumber"
+                style="@style/TextShowRight" />
+        </LinearLayout>
+
+        <View style="@style/viewstyle" />
+
+        <LinearLayout style="@style/Linearlayout">
+
+            <LinearLayout style="@style/LinearLayoutShowLife">
+
+                <TextView
+                    style="@style/TextShowLife"
+                    android:text="@string/jaauth_finishDate" />
+            </LinearLayout>
+
+            <TextView style="@style/TextShowContent" />
+
+            <TextView
+                android:id="@+id/tv_jaauth_applyfinishDate"
+                style="@style/TextShowRight" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

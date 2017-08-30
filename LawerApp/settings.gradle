@@ -1,0 +1,18 @@
+//include ':app'
+include ':apppublic', ':appservice'
+//':emojilib', ':emojiadpaterlibrary', ':emojirecycleviewlibrary',
+include ':chat'//聊天表情
+//include ':banner'//滑动横幅库
+include ':mobilelib'//自定义库
+//include ':poplibrary'//pop选择库
+//include ':easypermissions'//权限库
+//include ':easypermissionsdemo'//权限库demo
+//include ':material-dialogs-core'//自定义对话框核心库
+//include ':material-dialogs-commons'//自定义对话框扩选库，可选，包括颜色选择对话框、文件（夹）选择对话框、简单列表对话框等
+//include ':material-dialogs-sample'//自定义对话框示例
+include ':smack'//im库
+//include ':XRefreshView'//下拉刷新列表控件
+//include ':photoview' //图片查看控件
+//include ':UniversalImageLoader'//图片加载
+//include ':multi-image-selector'//图片选择
+//include ':uploadservice'//文件上传

@@ -1,0 +1,39 @@
+apply plugin: 'com.android.library'
+apply from: '../materialdialogsdependencies.gradle'
+
+ext {
+    PUBLISH_GROUP_ID = 'com.afollestad.material-dialogs'
+    PUBLISH_ARTIFACT_ID = 'core'
+    PUBLISH_VERSION = versions.publishVersion
+}
+
+android {
+    compileSdkVersion compileSdk
+    buildToolsVersion buildTools
+
+    defaultConfig {
+        minSdkVersion minSdk
+        targetSdkVersion targetSdk
+        versionCode versions.publishVersionCode
+        versionName versions.publishVersion
+        consumerProguardFiles 'progress-proguard.txt'
+    }
+    lintOptions {
+        abortOnError false
+        checkReleaseBuilds false
+    }
+    sourceSets {
+        main.res.srcDirs = [
+            'src/main/res',
+            'src/main/res-public'
+        ]
+    }
+}
+
+dependencies {
+    compile 'com.android.support:support-v13:' + support_library_version
+    compile 'com.android.support:appcompat-v7:' + support_library_version
+    compile 'com.android.support:recyclerview-v7:' + support_library_version
+    compile 'com.android.support:support-annotations:' + support_library_version
+    compile 'me.zhanghai.android.materialprogressbar:library:' + versions.mdProgressBar
+}

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/activity_bg"
+    tools:context="com.lawyee.appservice.ui.org.OrgApplyListActivity">
+
+    <LinearLayout style="@style/TitleBar">
+
+        <ImageView
+            style="@style/TitleBarAction"
+            android:onClick="onHomeClick"
+            android:src="@mipmap/icon_back" />
+
+        <TextView style="@style/TitleBarText" />
+
+        <Button
+            android:text="新增业务"
+            android:textColor="@color/white"
+            style="@style/TitleBarAction"
+         />
+    </LinearLayout>
+
+    <com.andview.refreshview.XRefreshView
+        android:id="@+id/mXrefreshView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rlv_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.andview.refreshview.XRefreshView>
+
+    <TextView
+        android:id="@+id/jaaidorg_content_empty_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="无符合条件的数据" />
+</LinearLayout>

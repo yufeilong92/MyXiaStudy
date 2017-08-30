@@ -1,0 +1,161 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarThumbVertical="@android:color/transparent"
+    android:scrollbars="vertical"
+    android:fillViewport="true"
+    tools:context="com.lawyee.appservice.ui.frag.JanotaDetailFragment">
+
+    <LinearLayout
+        android:padding="@dimen/boundary_8dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout style="@style/Linearlayout">
+            <LinearLayout style="@style/LinearLayoutShowLife">
+                <TextView
+                    style="@style/TextShowLife"
+                    android:text="@string/name" />
+            </LinearLayout>
+            <TextView style="@style/TextShowContent" />
+
+            <TextView
+                android:id="@+id/tv_janota_applyname"
+                style="@style/TextShowRight" />
+        </LinearLayout>
+        <View style="@style/viewstyle" />
+        <LinearLayout style="@style/Linearlayout">
+            <LinearLayout style="@style/LinearLayoutShowLife">
+                <TextView
+                    style="@style/TextShowLife"
+                    android:text="@string/cardtype" />
+            </LinearLayout>
+            <TextView style="@style/TextShowContent" />
+
+            <TextView
+                android:id="@+id/tv_janota_applycardtype"
+                style="@style/TextShowRight" />
+        </LinearLayout>
+        <View style="@style/viewstyle" />
+        <LinearLayout style="@style/Linearlayout">
+            <LinearLayout style="@style/LinearLayoutShowLife">
+                <TextView
+                    style="@style/TextShowLife"
+                    android:text="@string/cardnumber" />
+            </LinearLayout>
+            <TextView style="@style/TextShowContent" />
+
+            <TextView
+                android:id="@+id/tv_janota_applycardnumber"
+                style="@style/TextShowRight" />
+        </LinearLayout>
+        <View style="@style/viewstyle" />
+        <LinearLayout style="@style/Linearlayout">
+            <LinearLayout style="@style/LinearLayoutShowLife">
+                <TextView
+                    style="@style/TextShowLife"
+                    android:text="@string/phone" />
+            </LinearLayout>
+            <TextView style="@style/TextShowContent" />
+
+            <TextView
+                android:id="@+id/tv_janota_applyphone"
+                style="@style/TextShowRight" />
+        </LinearLayout>
+        <View style="@style/viewstyle" />
+        <LinearLayout style="@style/Linearlayout">
+            <LinearLayout style="@style/LinearLayoutShowLife">
+                <TextView
+                    style="@style/TextShowLife"
+                    android:text="@string/janota_carttype" />
+            </LinearLayout>
+            <TextView style="@style/TextShowContent" />
+
+            <TextView
+                android:id="@+id/tv_janota_applyNotaCartType"
+                style="@style/TextShowRight" />
+        </LinearLayout>
+        <View style="@style/viewstyle" />
+        <LinearLayout style="@style/Linearlayout">
+            <LinearLayout style="@style/LinearLayoutShowLife">
+                <TextView
+                    style="@style/TextShowLife"
+                    android:text="@string/janota_item" />
+            </LinearLayout>
+            <TextView style="@style/TextShowContent" />
+
+            <TextView
+                android:id="@+id/tv_janota_applyNotaitem"
+                style="@style/TextShowRight" />
+        </LinearLayout>
+        <View style="@style/viewstyle" />
+        <LinearLayout style="@style/Linearlayout">
+            <LinearLayout style="@style/LinearLayoutShowLife">
+                <TextView
+                    style="@style/TextShowLife"
+                    android:text="@string/janota_sham" />
+            </LinearLayout>
+            <TextView style="@style/TextShowContentNoIcon" />
+
+            <TextView
+                android:id="@+id/tv_janota_applysham"
+                style="@style/TextShowRight" />
+        </LinearLayout>
+        <View style="@style/viewstyle" />
+        <LinearLayout style="@style/Linearlayout">
+            <LinearLayout style="@style/LinearLayoutShowLife">
+                <TextView
+                    android:ems="5"
+                    style="@style/TextShowLife"
+                    android:text="@string/janota_booknumber" />
+            </LinearLayout>
+            <TextView style="@style/TextShowContentNoIcon" />
+
+            <TextView
+                android:id="@+id/tv_janota_applyNotaBooknumber"
+                style="@style/TextShowRight" />
+        </LinearLayout>
+        <View style="@style/viewstyle" />
+        <LinearLayout style="@style/Linearlayout">
+            <LinearLayout style="@style/LinearLayoutShowLife">
+                <TextView
+                    style="@style/TextShowLife"
+                    android:text="@string/janota_finishDate" />
+            </LinearLayout>
+            <TextView style="@style/TextShowContentNoIcon" />
+
+            <TextView
+                android:id="@+id/tv_janota_applyfinishDate"
+                style="@style/TextShowRight" />
+        </LinearLayout>
+        <View style="@style/viewstyle" />
+        <LinearLayout style="@style/Linearlayout">
+            <LinearLayout style="@style/LinearLayoutShowLife">
+                <TextView
+                    style="@style/TextShowLife"
+                    android:text="@string/janot_otherInfom" />
+            </LinearLayout>
+            <TextView style="@style/TextShowContentNoIcon" />
+
+            <TextView
+                android:id="@+id/tv_janota_applyotherInfom"
+                style="@style/TextShowRight" />
+        </LinearLayout>
+        <View style="@style/viewstyle" />
+        <LinearLayout style="@style/Linearlayout">
+            <LinearLayout style="@style/LinearLayoutShowLife">
+                <TextView
+                    style="@style/TextShowLife"
+                    android:text="@string/janota_enclosure" />
+            </LinearLayout>
+            <TextView style="@style/TextShowContentNoIcon" />
+
+            <TextView
+                android:id="@+id/tv_janota_applyAppendix"
+                android:textColor="@color/text_color"
+                style="@style/TextShowRight" />
+        </LinearLayout>
+        <View style="@style/viewstyle" />
+    </LinearLayout>
+</ScrollView>

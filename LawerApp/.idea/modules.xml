@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/LawerApp.iml" filepath="$PROJECT_DIR$/LawerApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apppublic/apppublic.iml" filepath="$PROJECT_DIR$/apppublic/apppublic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/appservice/appservice.iml" filepath="$PROJECT_DIR$/appservice/appservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chat/chat.iml" filepath="$PROJECT_DIR$/chat/chat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mobilelib/mobilelib.iml" filepath="$PROJECT_DIR$/mobilelib/mobilelib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/smack/smack.iml" filepath="$PROJECT_DIR$/smack/smack.iml" />
+    </modules>
+  </component>
+</project>

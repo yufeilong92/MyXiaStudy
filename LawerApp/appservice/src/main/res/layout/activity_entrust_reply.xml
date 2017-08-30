@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:focusable="true"
+              android:focusableInTouchMode="true"
+              android:background="@color/activity_bg"
+    >
+
+    <LinearLayout style="@style/TitleBar">
+
+        <ImageView
+            style="@style/TitleBarAction"
+            android:onClick="onHomeClick"
+            android:src="@mipmap/icon_back"
+            />
+
+        <TextView
+            style="@style/TitleBarText"
+            android:text="@string/my_entrust_reply"/>
+
+        <View
+            style="@style/TitleBarTextAction"
+            android:clickable="false"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Telephone"
+            android:layout_gravity="center"
+            android:textSize="@dimen/text_size_medium"
+            android:textColor="@color/lawyer_list_text_tip2"
+            />
+        <EditText
+            android:id="@+id/et_telephone"
+            style="@style/TextShowRight"
+            android:paddingLeft="5dp"
+            android:background="@drawable/bg_input_et"
+            android:imeOptions="actionNext"
+            android:inputType="phone" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/landline"
+            android:layout_gravity="center"
+            android:textSize="@dimen/text_size_medium"
+            android:textColor="@color/lawyer_list_text_tip2"
+            />
+        <EditText
+            android:id="@+id/et_landline"
+            style="@style/TextShowRight"
+            android:paddingLeft="5dp"
+            android:background="@drawable/bg_input_et"
+            android:imeOptions="actionNext"
+            android:inputType="phone" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reply_detail"
+            android:textSize="@dimen/text_size_medium"
+            android:textColor="@color/lawyer_list_text_tip2"
+            />
+
+        <EditText
+            android:id="@+id/et_reply_detail"
+            android:layout_marginLeft="@dimen/boundary_8dp"
+            android:paddingLeft="5dp"
+            android:layout_weight="0.65"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="top"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/text_size_medium"
+            android:background="@drawable/bg_input_et"
+            android:inputType="textMultiLine"
+            android:maxLines="20"
+            android:minLines="8"
+            android:scrollbars="vertical"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_reply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:background="@drawable/selector_law_screen_text"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="@string/sure"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_medium"
+        />
+</LinearLayout>
+

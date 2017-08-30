@@ -1,0 +1,73 @@
+<com.lawyee.appservice.widget.ScrollViewWith xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarThumbVertical="@android:color/transparent"
+    android:scrollbars="vertical"
+    android:fillViewport="true"
+    tools:context="com.lawyee.appservice.ui.frag.jamedAdtInfomFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/TextTitle"
+            android:text="@string/jamed_AuditingInfom" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/boundary_16dp"
+            android:orientation="vertical">
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/boundary_16dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rdb_jamedaccept"
+                   style="@style/RadioBtn"
+                    android:text="@string/accept" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/boundary_16dp" />
+
+                <RadioButton
+                    android:id="@+id/rdb_jemedNoaccept"
+                    android:text="@string/noaccept"
+                    style="@style/RadioBtn"/>
+            </RadioGroup>
+
+            <TextView
+                android:layout_marginTop="@dimen/boundary_16dp"
+                android:id="@+id/tv_jamed_season"
+                style="@style/Tv_Input"
+                android:clickable="true"
+                android:hint="@string/jamed_nohandleseason" />
+             <Space
+                 android:layout_width="match_parent"
+                 android:layout_height="@dimen/boundary_16dp" />
+              <com.lawyee.appservice.widget.ContentEditText
+                  android:id="@+id/et_jamedotherexplain"
+                  android:lines="6"
+                  android:gravity="top"
+                  android:background="@drawable/bg_input_et"
+                  android:textSize="@dimen/text_size_medium"
+                  android:hint="@string/jamed_otherexplain"
+                  android:layout_width="match_parent"
+                  android:padding="5dp"
+                  android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/btn_jamedsumbit"
+                android:text="@string/submit"
+                style="@style/btnSubmit"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</com.lawyee.appservice.widget.ScrollViewWith>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.lawyee.appservice.ui.org.JalawLawyerSelectActivity">
+    <LinearLayout style="@style/TitleBar">
+
+        <ImageView
+            style="@style/TitleBarAction"
+            android:onClick="onHomeClick"
+            android:src="@mipmap/icon_back" />
+
+        <TextView
+            style="@style/TitleBarText" />
+
+        <ImageView
+            style="@style/TitleBarAction"
+            android:clickable="false" />
+    </LinearLayout>
+    <com.andview.refreshview.XRefreshView
+        android:id="@+id/xfv_lalaw"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rlv_select_lalaw"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    </com.andview.refreshview.XRefreshView>
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/select_content_empty_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="无符合条件的数据"
+        android:textColor="@color/gray_text" />
+</LinearLayout>

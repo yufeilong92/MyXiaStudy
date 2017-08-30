@@ -1,0 +1,70 @@
+<com.lawyee.appservice.widget.ScrollViewWith xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_white"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    android:scrollbarThumbVertical="@android:color/transparent"
+    android:scrollbars="vertical"
+    tools:context="com.lawyee.appservice.ui.frag.JaaidfirstTrialInfomFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            style="@style/TextTitle"
+            android:text="审核结果" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/boundary_16dp"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rdb_jaaidpass"
+                    style="@style/RadioBtn"
+                    android:text="@string/pass" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/boundary_16dp" />
+
+                <RadioButton
+                    android:id="@+id/rdb_jaaidnopass"
+                    style="@style/RadioBtn"
+                    android:text="@string/nopass" />
+            </RadioGroup>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/boundary_16dp" />
+
+            <com.lawyee.appservice.widget.ContentEditText
+                android:id="@+id/et_nopass_reason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_input_et"
+                android:gravity="top"
+                android:hint="@string/jaaid_pleaseNoPass"
+                android:imeOptions="actionDone"
+                android:inputType="none"
+                android:lines="5"
+                android:padding="5dp" />
+
+            <Button
+                android:id="@+id/btn_Auditingsumber"
+                style="@style/btnSubmit"
+                android:text="@string/submit" />
+        </LinearLayout>
+    </LinearLayout>
+</com.lawyee.appservice.widget.ScrollViewWith>

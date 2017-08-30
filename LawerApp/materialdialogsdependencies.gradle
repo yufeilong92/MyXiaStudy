@@ -1,0 +1,8 @@
+ext.versions = [
+        publishVersion: '0.9.4.4',
+        publishVersionCode: 174,
+        gradlePlugin: '2.3.0',
+
+        mdProgressBar: '1.4.0',
+        butterKnife: '8.5.1'
+]

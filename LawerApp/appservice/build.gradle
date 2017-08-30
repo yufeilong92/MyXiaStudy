@@ -1,0 +1,51 @@
+apply plugin: 'com.android.application'
+android {
+    compileSdkVersion compileSdk
+    buildToolsVersion buildTools
+
+    defaultConfig {
+        applicationId "com.lawyee.appservice"
+        minSdkVersion minSdk
+        targetSdkVersion targetSdk
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+repositories {
+    flatDir { dirs 'libs' }
+}
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile "com.android.support:appcompat-v7:$support_library_version"
+    compile "com.android.support:recyclerview-v7:$support_library_version"
+    compile "com.android.support:support-v4:$support_library_version"
+    compile(name: 'easypermissions-release', ext: 'aar')
+    compile(name: 'material-dialogs-core-release', ext: 'aar')
+    compile(name: 'XRefreshView-release', ext: 'aar')
+    compile(name: 'photoview-release', ext: 'aar')
+    //用于multi-image-selector-release
+    compile(name: 'uploadservice-release', ext: 'aar')
+    compile project(':mobilelib')
+    compile files('libs/universal-image-loader-1.9.5.jar')
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.google.code.gson:gson:2.2.2'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.android.support:design:26.0.0-alpha1'
+    compile 'com.android.support:support-v4:25.3.1'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.squareup.picasso:picasso:2.4.0'
+    compile(name: 'multi-image-selector-release', ext: 'aar')
+    testCompile 'junit:junit:4.12'
+}

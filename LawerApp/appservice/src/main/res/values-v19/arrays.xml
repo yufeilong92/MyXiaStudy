@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--法援申请展示标题-->
+   <array name="jaaidtitles">
+       <item>预申请信息</item>
+       <item>初审信息</item>
+       <item>指派信息</item>
+   </array>
+</resources>

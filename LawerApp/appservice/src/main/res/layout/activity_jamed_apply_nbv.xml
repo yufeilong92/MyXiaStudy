@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context="com.lawyee.appservice.ui.org.JamedApplyNBVActivity">
+
+    <LinearLayout style="@style/TitleBar">
+
+        <ImageView
+            style="@style/TitleBarAction"
+            android:onClick="onHomeClick"
+            android:src="@mipmap/icon_back" />
+
+        <TextView style="@style/TitleBarText" />
+
+        <ImageView
+            style="@style/TitleBarAction"
+            android:clickable="false" />
+    </LinearLayout>
+
+    <com.lawyee.appservice.widget.ScrollViewWith
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbarThumbVertical="@android:color/transparent"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/boundary_16dp"
+                android:background="@color/white" />
+
+            <TextView
+                style="@style/TextTitle"
+                android:text="@string/jamed_apply_baseinfom" />
+
+            <View style="@style/viewstyle" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/boundary_8dp">
+
+                <LinearLayout style="@style/Linearlayout">
+
+                    <LinearLayout style="@style/LinearLayoutShowLife">
+
+                        <TextView
+
+                            style="@style/TextShowLife"
+                            android:text="@string/jamed_applynumber" />
+                    </LinearLayout>
+
+                    <TextView style="@style/TextShowContent" />
+
+                    <EditText
+                        android:id="@+id/et_jamed_Applynumber"
+                        style="@style/TextInputRight"
+                        android:imeOptions="actionNext"
+                        android:inputType="text" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/Linearlayout">
+
+                    <LinearLayout
+
+                        style="@style/LinearLayoutShowLife">
+
+                        <TextView
+                            style="@style/TextShowLife"
+                            android:text="@string/jamed_applyorg" />
+                    </LinearLayout>
+
+                    <TextView style="@style/TextShowContent" />
+
+                    <TextView
+                        android:id="@+id/tv_jamedApplyorg"
+                        style="@style/TextInputRight" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="6px"
+                android:background="#f1dddd" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/boundary_16dp"
+                android:background="#f7f7f7" />
+
+            <TextView
+                style="@style/TextTitle"
+                android:text="@string/jamed_applyPeople" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/boundary_8dp">
+
+                <LinearLayout style="@style/Linearlayout">
+
+                    <LinearLayout
+
+                        style="@style/LinearLayoutShowLife">
+
+                        <TextView
+                            style="@style/TextShowLife"
+                            android:text="@string/applyname" />
+                    </LinearLayout>
+
+                    <TextView style="@style/TextShowContent" />
+
+                    <EditText
+                        android:id="@+id/tv_jamedApplyname"
+                        style="@style/TextInputRight"
+                        android:imeOptions="actionNext"
+                        android:inputType="text" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/Linearlayout">
+
+                    <LinearLayout style="@style/LinearLayoutShowLife">
+
+                        <TextView
+                            style="@style/TextShowLife"
+                            android:text="@string/sex" />
+                    </LinearLayout>
+
+                    <TextView style="@style/TextShowContent" />
+
+                    <RadioGroup
+                        style="@style/TextShowRight"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rdb_jamed_ApplyBoy"
+                            style="@style/RadioBtn"
+                            android:text="@string/boy" />
+
+                        <RadioButton
+                            android:id="@+id/rdb_jamed_ApplyGril"
+                            style="@style/RadioBtn"
+                            android:text="@string/gril" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout style="@style/Linearlayout">
+
+                    <LinearLayout style="@style/LinearLayoutShowLife">
+
+                        <TextView
+                            style="@style/TextShowLife"
+                            android:text="@string/cardtype" />
+                    </LinearLayout>
+
+                    <TextView style="@style/TextShowContent" />
+
+                    <TextView
+                        android:id="@+id/tv_jamed_applycardType"
+                        style="@style/TextInputRightWithBg"
+                        android:hint="@string/tos_please_cardtype" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/Linearlayout">
+
+                    <LinearLayout style="@style/LinearLayoutShowLife">
+
+                        <TextView
+                            style="@style/TextShowLife"
+                            android:text="@string/cardnumber" />
+                    </LinearLayout>
+
+                    <TextView style="@style/TextShowContent" />
+
+                    <EditText
+
+                        android:id="@+id/et_jamed_applycardnumber"
+                        style="@style/TextInputRight"
+                        android:imeOptions="actionNext" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/Linearlayout">
+
+                    <LinearLayout style="@style/LinearLayoutShowLife">
+
+                        <TextView
+                            style="@style/TextShowLife"
+                            android:text="@string/brithday" />
+                    </LinearLayout>
+
+                    <TextView style="@style/TextShowContent" />
+
+                    <TextView
+                        android:id="@+id/tv_jamed_applybrithday"
+                        style="@style/TextInputRight" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/Linearlayout">
+
+                    <LinearLayout style="@style/LinearLayoutShowLife">
+
+                        <TextView
+                            style="@style/TextShowLife"
+                            android:text="@string/nation" />
+                    </LinearLayout>
+
+                    <TextView style="@style/TextShowContent" />
+
+                    <TextView
+                        android:id="@+id/tv_jamed_applynation"
+                        style="@style/TextInputRight" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/Linearlayout">
+
+                    <LinearLayout style="@style/LinearLayoutShowLife">
+
+                        <TextView
+                            style="@style/TextShowLife"
+                            android:text="@string/phone" />
+                    </LinearLayout>
+
+                    <TextView style="@style/TextShowContent" />
+
+                    <EditText
+                        android:id="@+id/et_jamed_applyphone"
+                        style="@style/TextInputRight"
+                        android:imeOptions="actionNext" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/Linearlayout">
+
+                    <LinearLayout style="@style/LinearLayoutShowLife">
+
+                        <TextView
+                            style="@style/TextShowLife"
+                            android:text="@string/jamed_applywork" />
+                    </LinearLayout>
+
+                    <TextView style="@style/TextShowContentNoIcon" />
+
+                    <EditText
+                        android:id="@+id/et_jamed_applywork"
+                        style="@style/TextInputRight"
+                        android:imeOptions="actionNext" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/Linearlayout">
+
+                    <LinearLayout style="@style/LinearLayoutShowLife">
+
+                        <TextView
+                            style="@style/TextShowLife"
+                            android:text="@string/jamed_applyrelation" />
+                    </LinearLayout>
+
+                    <TextView style="@style/TextShowContentNoIcon" />
+
+                    <EditText
+                        android:id="@+id/et_jamed_applyrelation"
+                        style="@style/TextInputRight"
+                        android:imeOptions="actionNext" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="6px"
+                android:background="#f1dddd" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/boundary_16dp"
+                android:background="#f7f7f7" />
+
+            <TextView
+                style="@style/TextTitle"
+                android:text="@string/jamed_beApplyInfom" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/boundary_8dp">
+
+                <LinearLayout style="@style/Linearlayout">
+
+                    <LinearLayout style="@style/LinearLayoutShowLife">
+
+                        <TextView
+                            style="@style/TextShowLife"
+                            android:text="@string/jamed_applybename" />
+                    </LinearLayout>
+
+                    <TextView style="@style/TextShowContent" />
+
+                    <EditText
+                        android:id="@+id/et_jamed_applybename"
+                        style="@style/TextInputRight"
+                        android:imeOptions="actionNext" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/Linearlayout">
+
+                    <LinearLayout style="@style/LinearLayoutShowLife">
+
+                        <TextView
+                            style="@style/TextShowLife"
+                            android:text="@string/sex" />
+                    </LinearLayout>
+
+                    <TextView style="@style/TextShowContent" />
+
+                    <RadioGroup
+                        style="@style/TextShowRight"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rdb_jamed_beiApplyBoy"
+                            style="@style/RadioBtn"
+                            android:text="@string/boy" />
+
+                        <RadioButton
+                            android:id="@+id/rdb_jamed_beiApplyGril"
+                            style="@style/RadioBtn"
+                            android:text="@string/gril" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout style="@style/Linearlayout">
+
+                    <LinearLayout style="@style/LinearLayoutShowLife">
+
+                        <TextView
+                            style="@style/TextShowLife"
+                            android:text="@string/cardtype" />
+                    </LinearLayout>
+
+                    <TextView style="@style/TextShowContent" />
+
+                    <TextView
+                        android:id="@+id/tv_jamed_applybeiCardType"
+                        style="@style/TextInputRightWithBg"
+                        android:hint="@string/tos_please_cardtype" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/Linearlayout">
+
+                    <LinearLayout style="@style/LinearLayoutShowLife">
+
+                        <TextView
+                            style="@style/TextShowLife"
+                            android:text="@string/cardnumber" />
+                    </LinearLayout>
+
+                    <TextView style="@style/TextShowContent" />
+
+                    <EditText
+                        android:id="@+id/et_jamed_applybeicardnumber"
+                        style="@style/TextInputRight"
+                        android:imeOptions="actionNext" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/Linearlayout">
+
+                    <LinearLayout style="@style/LinearLayoutShowLife">
+
+                        <TextView
+                            style="@style/TextShowLife"
+                            android:text="@string/brithday" />
+                    </LinearLayout>
+
+                    <TextView style="@style/TextShowContent" />
+
+                    <TextView
+                        android:id="@+id/tv_jamed_applyBeibrithday"
+                        style="@style/TextInputRight"
+                        android:imeOptions="actionNext" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/Linearlayout">
+
+                    <LinearLayout style="@style/LinearLayoutShowLife">
+
+                        <TextView
+                            style="@style/TextShowLife"
+                            android:text="@string/nation" />
+                    </LinearLayout>
+
+                    <TextView style="@style/TextShowContent" />
+
+                    <TextView
+                        android:id="@+id/tv_jamed_applybeiNation"
+                        style="@style/TextInputRight" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/Linearlayout">
+
+                    <LinearLayout style="@style/LinearLayoutShowLife">
+
+                        <TextView
+                            style="@style/TextShowLife"
+                            android:text="@string/phone" />
+                    </LinearLayout>
+
+                    <TextView style="@style/TextShowContent" />
+
+                    <EditText
+                        android:id="@+id/et_jamed_applybeiphone"
+                        style="@style/TextInputRight"
+                        android:imeOptions="actionNext"
+                        android:maxLength="11" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/Linearlayout">
+
+                    <LinearLayout style="@style/LinearLayoutShowLife">
+
+                        <TextView
+                            style="@style/TextShowLife"
+                            android:text="@string/jamed_applywork" />
+                    </LinearLayout>
+
+                    <TextView style="@style/TextShowContentNoIcon" />
+
+                    <EditText
+                        android:id="@+id/et_jamed_applybeiwork"
+                        style="@style/TextInputRight"
+                        android:imeOptions="actionNext" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/Linearlayout">
+
+                    <LinearLayout
+                        style="@style/LinearLayoutShowLife"
+                        android:layout_gravity="top">
+
+                        <TextView
+                            style="@style/TextShowLife"
+                            android:text="@string/jamed_applycase" />
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/TextShowContent"
+                        android:layout_gravity="top"
+                        android:paddingTop="5dp" />
+
+                    <com.lawyee.appservice.widget.ContentEditText
+                        android:id="@+id/et_jamed_applycase"
+                        style="@style/TextInputRight"
+                        android:imeOptions="actionNext"
+                        android:lines="3" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/Linearlayout">
+
+                    <LinearLayout
+                        style="@style/LinearLayoutShowLife"
+                        android:layout_gravity="top">
+
+                        <TextView
+                            style="@style/TextShowLife"
+                            android:text="@string/jamed_applyitem" />
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/TextShowContent"
+                        android:layout_gravity="top"
+                        android:paddingTop="5dp" />
+
+                    <com.lawyee.appservice.widget.ContentEditText
+                        android:id="@+id/et_jamed_applyitem"
+                        style="@style/TextInputRight"
+                        android:imeOptions="actionDone"
+                        android:lines="3" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/jamed_submit"
+                    style="@style/btnSubmit"
+                    android:text="@string/submit" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.lawyee.appservice.widget.ScrollViewWith>
+</LinearLayout>

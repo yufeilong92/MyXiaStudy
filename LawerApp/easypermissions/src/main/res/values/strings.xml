@@ -1,0 +1,4 @@
+<resources>
+    <string name="rationale_ask_again">当前应用缺少必要权限，该功能暂时无法使用。如若需要，请单击【确定】按钮前往设置中心进行此应用权限授权。</string>
+    <string name="title_settings_dialog">权限需求</string>
+</resources>

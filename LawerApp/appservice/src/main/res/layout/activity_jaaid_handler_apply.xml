@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout style="@style/TitleBar">
+
+        <ImageView
+            style="@style/TitleBarAction"
+            android:onClick="onHomeClick"
+            android:src="@mipmap/icon_back" />
+
+        <TextView
+            style="@style/TitleBarText"
+            android:text="申请详情" />
+
+        <ImageView
+            style="@style/TitleBarAction"
+            android:clickable="false" />
+    </LinearLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tablayout"
+        style="@style/Base.Widget.Design.TabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:tabSelectedTextColor="@color/red_org"
+        app:tabTextAppearance="@style/TabLayoutTextAppearance" />
+
+    <com.lawyee.appservice.widget.NoScrollViewPager
+       android:layout_width="match_parent"
+       android:id="@+id/jaaid_noscollviewpager"
+       android:layout_height="match_parent"/>
+</LinearLayout>

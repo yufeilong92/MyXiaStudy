@@ -1,0 +1,211 @@
+<resources>
+    <string name="app_name">appservice</string>
+    <string name="url_base">http://202.98.194.56:8888</string>
+    <!-- 需要增另链接地址前缀的判断地址 -->
+    <string name="url_base_pro">appinterface</string>
+
+    <!-- 手机端服务端接口URLhttp://m.rufa.gov.cn/appinterface/execute -->
+    <string name="url_json">$base/$pro/rest.q4w</string>
+    <!--图片附件地址，将[oid]替换为需要的值-->
+    <string name="url_imagefileurl">$base/website/attachment/readimg.q4w?oid=[oid]</string>
+    <!--一般附件地址，将[oid]替换为需要的值-->
+    <string name="url_fileurl">$base/website/attachment/download.q4w?oid=[oid]</string>
+    <!-- 文件 http://202.98.194.56:8888/quick4w/appinterface/uploadify.q4w-->
+    <string name="url_uploadfileurl">$base/$pro/uploadify.q4w</string>
+
+    <string name="url_openfire_server">101.200.104.242</string>
+
+    <string name="url_openfire_port">5222</string>
+    <string name="url_openfire_ressource">admin</string>
+    <!-- 网络异常提示信息 -->
+    <string name="prompt_network_connect_timeout">连接超时！</string>
+    <string name="prompt_network_read_timeout">读取超时！</string>
+    <string name="prompt_network_url_error">url地址无效！</string>
+    <string name="prompt_network_error">网络连接失败！</string>
+    <string name="prompt_network_receiving_data_error">数据获取失败！</string>
+    <!-- 权限提示相关 -->
+    <string name="rationale_storage">此应用程序需要访问存储卡的权限。</string>
+    <string name="rationale_camera">此应用程序需要打开照相机的权限。</string>
+    <string name="rationale_location">此应用程序需要定位的权限.</string>
+    <string name="rationale_ask_again">当前应用缺少必要权限，该功能暂时无法使用。如若需要，请单击【确定】按钮前往设置中心进行此应用权限授权。</string>
+    <string name="rationale_title_settings_dialog">权限需求</string>
+    <string name="rationale_setting">设置</string>
+    <string name="rationale_cancel">取消</string>
+
+    <string name="app_error">应用程序错误</string>
+    <string name="app_error_message">很抱歉，应用程序出现错误，即将退出。\n请选择邮件的方式将此错误报告提交给我，我会尽快修复这个问题，谢谢！</string>
+    <string name="submit_report">提交报告</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--设置-->
+    <string name="setting_title">公共法律服务</string>
+    <string name="message_free">消息免打扰</string>
+    <string name="clear_cache">清除缓存</string>
+    <string name="switch_account">切换账号</string>
+    <string name="logout">退出账号</string>
+    <!--个人中心-->
+    <!-- 律师模块-->
+    <string name="my_entrust">我的委托</string>
+    <string name="principal">&#160;&#160;&#160;&#160;委托人：</string>
+    <string name="commitment">委托事项：</string>
+    <string name="entrust_time">委托时间：</string>
+    <string name="entrust_detail">委托详情：</string>
+    <string name="reply">回复</string>
+    <string name="my_entrust_reply">我的委托-委托回复</string>
+    <string name="Telephone">手机号码：</string>
+    <string name="landline">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;座机：</string>
+    <string name="reply_detail">回复详情：</string>
+    <string name="sure">确定</string>
+    <string name="percenter">个人中心</string>
+    <string name="head_portrait1">头像</string>
+    <string name="name2">姓名</string>
+    <string name="sex2">性别</string>
+    <string name="phone2">电话</string>
+    <string name="lawfirm">律所</string>
+    <string name="email">邮箱</string>
+    <string name="professional_field">专业领域</string>
+    <!--法援-->
+    <string name="jaaid_apply_infom">申请人信息</string>
+    <string name="jaaid_Location">户籍所在地</string>
+    <string name="jaaid_abode">住所地(经常居住地)</string>
+    <string name="jaaid_reason">案情及申请理由概述</string>
+    <string name="jaaid_other_infom">其他信息</string>
+    <string name="name">姓&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;名</string>
+    <string name="sex">性&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;别</string>
+    <string name="work">工作单位</string>
+    <string name="cardtype">证件类型</string>
+    <string name="cardnumber">证件号码</string>
+    <string name="nation">民&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;族</string>
+    <string name="phone">联系电话</string>
+    <string name="jaaid_dainame">代理人姓名</string>
+    <string name="jaaid_daitype">代理人类型</string>
+    <string name="jaaid_daicardnumber">代理人身份证号</string>
+    <string name="jaaid_partyname">对方当事人姓名</string>
+    <string name="jaaid_partyhere">对方当事人住址</string>
+    <string name="jaaid_casehere">案件发生地</string>
+    <string name="jaaid_handlerhere">办案机关所在地</string>
+    <string name="jaaid_handlerOrg">选择受理机构</string>
+    <string name="jaaid_status">材&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;料</string>
+    <string name="jaaid_law_applybook">法律援助申请委托书</string>
+    <string name="jaaid_status_jingji">经济情况证明材料</string>
+    <string name="jaaid_apply_otherstuta">其他与申请有关案件材料</string>
+    <string name="jaaid_appoint">指派信息</string>
+    <string name="jaaid_pleasefirms">请选择律所</string>
+    <string name="submit">提交</string>
+    <string name="handle">办理</string>
+    <string name="jaaid_pleaselawyer">请选择律师</string>
+    <string name="jaaid_pleaseNoPass">填写不通过原因</string>
+    <string name="jaaid_applyfruit">请选择审核结果</string>
+    <string name="jamed_applyInfom">申请信息</string>
+    <string name="jamed_applytype">调解类型</string>
+    <string name="jamed_applyorg">调解机构</string>
+    <string name="jamed_appymedia">是否同意参与媒体调解</string>
+    <string name="applyname">申请人姓名</string>
+    <string name="jamed_applywork">单位或住址</string>
+    <string name="jamed_applyrelation">与被申请人关系</string>
+    <string name="jamed_applybename">被申请人姓名</string>
+    <string name="brithday">出生日期</string>
+    <string name="jamed_beApplyInfom">被申请人信息</string>
+    <string name="jamed_infom">调解信息</string>
+    <string name="jamed_applycase">纠纷简要案情</string>
+    <string name="jamed_applyitem">当事人申请事项</string>
+    <string name="jamed_AuditingInfom">审核结果</string>
+    <string name="jamed_nohandleseason">请选择不予受理的原因</string>
+    <string name="jamed_otherexplain">请填写其他说明</string>
+    <string name="jamed_feekbackinfom">调解结果反馈信息</string>
+    <string name="jamed_isSuccess">调解是否成功</string>
+    <string name="success">成功</string>
+    <string name="fail">未成功</string>
+    <string name="accept">受理</string>
+    <string name="noaccept">不予受理</string>
+    <string name="pass">通过</string>
+    <string name="nopass">不通过</string>
+    <string name="jamed_fbdata">调解结果时间</string>
+    <string name="jamed_judicial_notice">是否进行司法确认</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="jamed_upload">上传调解协议</string>
+    <string name="jamed_uploadfb">请上传调解协议</string>
+    <string name="janota_carttype">公证类型</string>
+    <string name="janota_item">公证事项</string>
+    <string name="janota_booknumber">公证书编号</string>
+    <string name="janot_otherInfom">其他说明</string>
+    <string name="janota_upload">附件上传</string>
+    <string name="janota_sham">是否存在虚假证明</string>
+    <string name="janota_finishDate">结案时间</string>
+    <string name="janota_enclosure">附&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;件</string>
+    <string name="jaauth_cardtype">鉴定类型</string>
+    <string name="jaauth_PersonalApply">个人申请</string>
+    <string name="Jaauth_OrgWei">机构委托</string>
+    <string name="jaauth_EntrustWork">委托单位</string>
+    <string name="boy">男</string>
+    <string name="gril">女</string>
+    <string name="jaauth_ApplyAbility">申请人行为能力</string>
+    <string name="jaauth_DaiName">代理人姓名</string>
+    <string name="jaaut_DaiCardNumber">代理人身份证号码</string>
+    <string name="jaauth_item">鉴定事项</string>
+    <string name="jaauth_introduction">案情简介</string>
+    <string name="jaauth_JieLunInfom">鉴定结论信息</string>
+    <string name="jaauth_material_list">材料清单</string>
+    <string name="jaauth_selectFile">选择文件</string>
+    <string name="jaaut_BookNumber">鉴定书编号</string>
+    <string name="jaauth_finishDate">鉴定完成时间</string>
+    <string name="IdCard">身份证</string>
+    <string name="jaaid_Business">法援业务</string>
+    <string name="tos_pleasejaauthCardType">请选择鉴定类型</string>
+    <string name="tos_please_orgweituo">委托单位不能为空</string>
+    <string name="tos_pleaseApplyname">申请人姓名不能为空</string>
+    <string name="tos_please_sex">请选择性别</string>
+    <string name="tos_please_cardtype">请选择证件类型</string>
+
+    <!--登陆-->
+    <string name="login">登录</string>
+    <string name="please_input_phone">请输入您的手机号</string>
+    <string name="please_input_pwd">请输入密码</string>
+    <string name="login2">登&#160;&#160;&#160;&#160;&#160;录</string>
+    <string name="tos_pleaseIsCardNumber">证件号码不能为空</string>
+    <string name="jaauth_please_isAbility">请选择申请人行为能力</string>
+    <string name="janot_please_CardType">请选择证件类型</string>
+    <string name="janot_pleaseJanotType">请选择公证类型</string>
+    <string name="save">保存</string>
+    <string name="Jaauth_pleaseDaiName">代理人姓名不能为空</string>
+    <string name="jaauth_pleaseDaiCardNumber">代理人证件号码不能为空</string>
+    <string name="jaauth_pleaseCaseJianjie">案情简介不能为空</string>
+    <string name="jaauth_pleasejielunInfom">鉴定结论信息不能为空</string>
+    <string name="jaauth_please_bookNumber">鉴定书编号不能为空</string>
+    <string name="jaauth_pleaseListStatu">材料清单不能为空</string>
+    <string name="jamed_apply_baseinfom">基本信息</string>
+    <string name="jamed_applynumber">调解编号</string>
+    <string name="jamed_applyPeople">申请人信息</string>
+    <string name="tos_pleasaselectabilit">请选择申请人行为能力</string>
+    <string name="tos_jamedIsEmpty">调解编号不能为空</string>
+    <string name="tos_jamedOrgIsEmpty">调解机构不能为空</string>
+    <string name="tos_BrithdayIsEmpty">出生日期不能为空</string>
+    <string name="tos_pleaseNation">请选择民族</string>
+    <string name="tos_telephoneIsEmpty">联系电话不能为空</string>
+    <string name="tos_beNameIsEmpty">被申请人姓名不能为空</string>
+    <string name="tos_pleasebeiApplySex">请选择被申请人的性别</string>
+    <string name="tos_pleaseBeiApplyCardType">请选择被申请人证件类型</string>
+    <string name="tos_pleasebeCardNumber">被申请人证件号码不能为空</string>
+    <string name="tos_pleaseBeiNation">请选择被申请人民族</string>
+    <string name="tos_pleasebePhone">被申请人的联系电话不能为空</string>
+    <string name="tos_pleaseCasebrief">纠纷简要案情不能为空</string>
+    <string name="tos_pleaseMatterIsEmpty">当事人的申请事项不能为空</string>
+    <string name="jaauth_CaseItem">请选择鉴定事项</string>
+    <string name="tos_pleaseAatuhItem">请选择鉴定事项</string>
+    <string name="jaauth_finishDateIsEmpty">鉴定完成时间不能为空</string>
+    <string name="tos_pleaseselectNotaType">请选择公证类型</string>
+    <string name="tos_pleaseNotaItem">请选择公证事项</string>
+    <string name="tos_pleaseIsTrue">请确认是否存在虚假证明</string>
+    <string name="tos_jantoBookNumberIsEmpty">公证书编号不能为空</string>
+    <string name="tos_pleaseJamedIsSureess">请选择调解是否成功</string>
+    <string name="tos_pleaseJamedFinishDate">请选择调解结束时间</string>
+    <string name="tos_pleasejamedIsTure">请选择司法是否进行确认</string>
+    <string name="tos_pleaseAuditing">请选择审核结果</string>
+    <string name="tos_pleaseIdCardIsRight">请输入正确的身份证号码</string>
+    <string name="tos_pleaseOfficerIsRight">请输入正确军官证号码</string>
+    <string name="tos_pleaseTelephoneIsRight">请输入正确联系电话号码</string>
+    <string name="tos_pleaseBeOfficerIsRight">请输入被申请人正确的军官证号码</string>
+    <string name="tos_pleaseBeIdIsRight">请输入被申请人正确的身份证号码</string>
+    <string name="tos_pleaseBeTeleploneIsRight">请输入被申请人正确的联系号码</string>
+</resources>

@@ -1,0 +1,18 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion compileSdk
+    buildToolsVersion buildTools
+    useLibrary 'org.apache.http.legacy'
+    defaultConfig {
+        minSdkVersion minSdk
+        targetSdkVersion targetSdk
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}

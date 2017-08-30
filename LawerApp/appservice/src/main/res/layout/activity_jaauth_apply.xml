@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.lawyee.appservice.ui.org.JaauthApplyNBVActivity">
+
+
+    <LinearLayout style="@style/TitleBar">
+
+        <ImageView
+            style="@style/TitleBarAction"
+            android:onClick="onHomeClick"
+            android:src="@mipmap/icon_back" />
+
+        <TextView style="@style/TitleBarText" />
+
+        <ImageView
+            style="@style/TitleBarAction"
+            android:clickable="false" />
+    </LinearLayout>
+
+    <com.lawyee.appservice.widget.ScrollViewWith
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbarThumbVertical="@android:color/transparent"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/boundary_16dp"
+                android:orientation="vertical"
+                android:padding="@dimen/boundary_8dp">
+
+                <LinearLayout style="@style/Linearlayout">
+
+                    <LinearLayout style="@style/LinearLayoutShowLife">
+
+                        <TextView
+                            style="@style/TextShowLife"
+                            android:text="@string/jaauth_cardtype" />
+                    </LinearLayout>
+
+                    <TextView style="@style/TextShowContent" />
+
+                    <RadioGroup
+                        style="@style/TextShowRight"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rdb_jaauthPersonApply"
+                            style="@style/RadioBtn"
+                            android:text="@string/jaauth_PersonalApply" />
+
+                        <RadioButton
+
+                            android:id="@+id/rdb_jaauthOrgWeiTuo"
+                            style="@style/RadioBtn"
+                            android:text="@string/Jaauth_OrgWei" />
+
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout style="@style/Linearlayout">
+
+                    <LinearLayout style="@style/LinearLayoutShowLife">
+
+                        <TextView
+
+                            style="@style/TextShowLife"
+                            android:text="@string/jaauth_EntrustWork" />
+                    </LinearLayout>
+
+                    <TextView style="@style/TextShowContentNoIcon" />
+
+                    <EditText
+                        android:id="@+id/et_jaauthApplyEntrustWork"
+                        style="@style/TextInputRight"
+                        android:imeOptions="actionNext"
+                        android:inputType="text" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/Linearlayout">
+
+                    <LinearLayout style="@style/LinearLayoutShowLife">
+
+                        <TextView
+                            style="@style/TextShowLife"
+                            android:ems="5"
+                            android:text="@string/applyname" />
+                    </LinearLayout>
+
+                    <TextView style="@style/TextShowContent" />
+
+                    <EditText
+                        android:id="@+id/et_jaauthApplyName"
+                        style="@style/TextInputRight"
+                        android:imeOptions="actionNext"
+                        android:inputType="text" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/Linearlayout">
+
+                    <LinearLayout style="@style/LinearLayoutShowLife">
+
+                        <TextView
+                            style="@style/TextShowLife"
+                            android:text="@string/sex" />
+                    </LinearLayout>
+
+                    <TextView style="@style/TextShowContent" />
+
+                    <RadioGroup
+                        style="@style/TextShowRight"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/jaauth_ApplyBoy"
+                            style="@style/RadioBtn"
+                            android:text="@string/boy" />
+
+                        <RadioButton
+                            android:id="@+id/jaauth_ApplyGril"
+                            style="@style/RadioBtn"
+                            android:text="@string/gril" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout style="@style/Linearlayout">
+
+                    <LinearLayout style="@style/LinearLayoutShowLife">
+
+                        <TextView
+                            style="@style/TextShowLife"
+                            android:text="@string/cardtype" />
+                    </LinearLayout>
+
+                    <TextView style="@style/TextShowContent" />
+
+                    <TextView
+                        android:id="@+id/tv_jaauthApplyCardType"
+                        style="@style/TextInputRightWithBg"
+                        android:hint="@string/tos_please_cardtype" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/Linearlayout">
+
+                    <LinearLayout style="@style/LinearLayoutShowLife">
+
+                        <TextView
+                            style="@style/TextShowLife"
+                            android:text="@string/cardnumber" />
+                    </LinearLayout>
+
+                    <TextView style="@style/TextShowContent" />
+
+                    <EditText
+                        android:id="@+id/et_jaauthApplyCardNumber"
+                        style="@style/TextInputRight"
+                        android:imeOptions="actionNext"
+                        android:maxLength="18"
+                        android:inputType="text" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/Linearlayout">
+
+                    <LinearLayout style="@style/LinearLayoutShowLife">
+
+                        <TextView
+
+                            style="@style/TextShowLife"
+                            android:text="@string/brithday" />
+                    </LinearLayout>
+
+                    <TextView style="@style/TextShowContentNoIcon" />
+
+                    <TextView
+                        android:id="@+id/tv_jaauthApplybrithday"
+                        style="@style/TextInputRight"
+                        android:padding="@dimen/boundary_8dp" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/Linearlayout">
+
+                    <LinearLayout style="@style/LinearLayoutShowLife">
+
+                        <TextView
+                            style="@style/TextShowLife"
+                            android:ems="5"
+                            android:text="@string/jaauth_ApplyAbility" />
+                    </LinearLayout>
+
+                    <TextView style="@style/TextShowContent" />
+
+                    <TextView
+                        android:id="@+id/tv_jaauthApplyAbility"
+                        style="@style/TextInputRightWithBg"
+                        android:hint="@string/jaauth_please_isAbility" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/Linearlayout">
+
+                    <LinearLayout style="@style/LinearLayoutShowLife">
+
+                        <TextView
+                            style="@style/TextShowLife"
+                            android:text="@string/jaauth_DaiName" />
+                    </LinearLayout>
+
+                    <TextView style="@style/TextShowContentNoIcon" />
+
+                    <EditText
+                        android:id="@+id/et_jaauthApplyDaiName"
+                        style="@style/TextInputRight"
+                        android:imeOptions="actionNext"
+                        android:inputType="text" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/Linearlayout">
+
+                    <LinearLayout style="@style/LinearLayoutShowLife">
+
+                        <TextView
+                            style="@style/TextShowLife"
+                            android:ems="5"
+                            android:text="@string/jaaut_DaiCardNumber" />
+                    </LinearLayout>
+
+                    <TextView style="@style/TextShowContentNoIcon" />
+
+                    <EditText
+                        android:id="@+id/et_jaauthApplyDaiCardNumber"
+                        style="@style/TextShowRight"
+                        android:background="@drawable/bg_input_et"
+                        android:imeOptions="actionNext"
+                        android:maxLength="18"
+                        android:inputType="text" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/Linearlayout">
+
+                    <LinearLayout style="@style/LinearLayoutShowLife">
+
+                        <TextView
+                            style="@style/TextShowLife"
+                            android:text="@string/jaauth_item" />
+                    </LinearLayout>
+
+                    <TextView style="@style/TextShowContent" />
+
+                    <TextView
+                        android:hint="@string/jaauth_CaseItem"
+                        android:id="@+id/tv_jaauthApplyitem"
+                        style="@style/TextShowRight"
+                        android:background="@drawable/bg_input_et" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/Linearlayout">
+
+                    <LinearLayout
+                        style="@style/LinearLayoutShowLife"
+                        android:layout_gravity="top">
+
+                        <TextView
+                            style="@style/TextShowLife"
+                            android:text="@string/jaauth_introduction" />
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/TextShowContentNoIcon"
+                        android:layout_gravity="top"
+                        android:paddingTop="5dp" />
+
+                    <com.lawyee.appservice.widget.ContentEditText
+                        android:id="@+id/et_jaauthApplyintroduction"
+                        style="@style/TextShowRight"
+                        android:background="@drawable/bg_input_et"
+                        android:gravity="top"
+                        android:imeOptions="actionNext"
+                        android:lines="3"
+                       />
+                </LinearLayout>
+
+                <LinearLayout style="@style/Linearlayout">
+
+                    <LinearLayout
+                        android:layout_gravity="top"
+                        style="@style/LinearLayoutShowLife">
+
+                        <TextView
+
+                            style="@style/TextShowLife"
+                            android:ems="5"
+                            android:text="@string/jaauth_JieLunInfom" />
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/TextShowContentNoIcon"
+                        android:layout_gravity="top"
+                        android:paddingTop="5dp" />
+
+                    <com.lawyee.appservice.widget.ContentEditText
+                        android:id="@+id/et_jaauthApplyJieLunInfom"
+                        style="@style/TextShowRight"
+                        android:background="@drawable/bg_input_et"
+                        android:gravity="top"
+                        android:imeOptions="actionNext"
+                        android:lines="3"
+                        />
+                </LinearLayout>
+
+
+                <LinearLayout style="@style/Linearlayout">
+
+                    <LinearLayout
+                        style="@style/LinearLayoutShowLife"
+                        android:layout_gravity="center_vertical">
+
+                        <TextView
+                            style="@style/TextShowLife"
+                            android:text="@string/jaauth_material_list" />
+                    </LinearLayout>
+
+                    <TextView style="@style/TextShowContentNoIcon" />
+
+                    <LinearLayout style="@style/TextShowRight">
+
+                        <TextView
+                            android:id="@+id/tv_jaauthApplyMaterial_list"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_input_et"
+                            android:gravity="center" />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/boundary_8dp"
+                            android:background="@drawable/select_btn_jaaidapply"
+                            android:text="@string/jaauth_selectFile"
+                            android:textColor="@color/activity_bg" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/Linearlayout">
+
+                    <LinearLayout style="@style/LinearLayoutShowLife">
+
+                        <TextView
+                            style="@style/TextShowLife"
+                            android:ems="5"
+                            android:text="@string/jaaut_BookNumber" />
+                    </LinearLayout>
+
+                    <TextView style="@style/TextShowContent" />
+
+                    <EditText
+                        android:id="@+id/tv_jaauthApplyBookNumber"
+                        style="@style/TextShowRight"
+                        android:background="@drawable/bg_input_et"
+                        android:imeOptions="actionDone"
+                        android:inputType="text" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/Linearlayout">
+
+                    <LinearLayout style="@style/LinearLayoutShowLife">
+
+                        <TextView
+                            style="@style/TextShowLife"
+                            android:ems="5"
+                            android:text="@string/jaauth_finishDate" />
+                    </LinearLayout>
+
+                    <TextView style="@style/TextShowContent" />
+
+                    <TextView
+                        android:id="@+id/tv_jaauthApplyfinishDate"
+                        style="@style/TextShowRight"
+                        android:background="@drawable/bg_input_et" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/jaauth_submit"
+                    style="@style/btnSubmit"
+                    android:text="@string/submit" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.lawyee.appservice.widget.ScrollViewWith>
+</LinearLayout>

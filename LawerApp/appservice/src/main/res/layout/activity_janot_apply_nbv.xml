@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.lawyee.appservice.ui.org.JanotaApplyNBVActivity">
+
+    <LinearLayout style="@style/TitleBar">
+
+        <ImageView
+            style="@style/TitleBarAction"
+            android:onClick="onHomeClick"
+            android:src="@mipmap/icon_back" />
+
+        <TextView style="@style/TitleBarText" />
+
+        <ImageView
+            style="@style/TitleBarAction"
+            android:clickable="false" />
+    </LinearLayout>
+    <com.lawyee.appservice.widget.ScrollViewWith
+        android:fillViewport="true"
+        android:scrollbarThumbVertical="@android:color/transparent"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/boundary_16dp"
+                android:orientation="vertical"
+                android:padding="@dimen/boundary_8dp">
+
+                <LinearLayout style="@style/Linearlayout">
+
+                    <LinearLayout style="@style/LinearLayoutShowLife">
+
+                        <TextView
+                            style="@style/TextShowLife"
+                            android:text="@string/applyname" />
+                    </LinearLayout>
+
+                    <TextView style="@style/TextShowContent" />
+
+                    <EditText
+                        android:id="@+id/et_janotaApplyName"
+                        style="@style/TextInputRight"
+                        android:imeOptions="actionNext"
+                        android:inputType="text" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/Linearlayout">
+
+                    <LinearLayout style="@style/LinearLayoutShowLife">
+
+                        <TextView
+                            style="@style/TextShowLife"
+                            android:text="@string/cardtype" />
+                    </LinearLayout>
+
+                    <TextView style="@style/TextShowContent" />
+
+                    <TextView
+                        android:id="@+id/tv_janotaApplyCardType"
+                        style="@style/TextInputRightWithBg"
+                        android:hint="@string/janot_please_CardType" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/Linearlayout">
+
+                    <LinearLayout style="@style/LinearLayoutShowLife">
+
+                        <TextView
+                            style="@style/TextShowLife"
+                            android:text="@string/cardnumber" />
+                    </LinearLayout>
+
+                    <TextView style="@style/TextShowContent" />
+
+                    <EditText
+
+                        android:id="@+id/et_janotaApplyCardnumber"
+                        style="@style/TextInputRight"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:maxLength="18" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/Linearlayout">
+
+                    <LinearLayout style="@style/LinearLayoutShowLife">
+
+                        <TextView
+                            style="@style/TextShowLife"
+                            android:text="@string/phone" />
+                    </LinearLayout>
+
+                    <TextView style="@style/TextShowContent" />
+
+                    <EditText
+                        android:id="@+id/et_janotaApplyPhone"
+                        style="@style/TextInputRight"
+                        android:background="@drawable/bg_input_et"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:maxLength="11" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/Linearlayout">
+
+                    <LinearLayout style="@style/LinearLayoutShowLife">
+
+                        <TextView
+                            style="@style/TextShowLife"
+                            android:text="@string/janota_carttype" />
+                    </LinearLayout>
+
+                    <TextView style="@style/TextShowContent" />
+
+                    <TextView
+                        android:id="@+id/tv_janotaGongCardType"
+                        style="@style/TextInputRightWithBg"
+                        android:hint="@string/janot_pleaseJanotType" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/Linearlayout">
+
+                    <LinearLayout style="@style/LinearLayoutShowLife">
+
+                        <TextView
+                            style="@style/TextShowLife"
+                            android:text="@string/janota_item" />
+                    </LinearLayout>
+
+                    <TextView style="@style/TextShowContent" />
+
+                    <TextView
+                        android:hint="@string/tos_pleaseNotaItem"
+                        android:id="@+id/tv_janotaGongItem"
+                        style="@style/TextInputRightWithBg"
+                        android:background="@drawable/bg_input_et" />
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/chb_janotaApplyIsRight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/icon_tv_stars"
+                    android:padding="@dimen/boundary_16dp"
+                    android:text="@string/janota_sham"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <LinearLayout style="@style/Linearlayout">
+
+                    <LinearLayout style="@style/LinearLayoutShowLife">
+
+                        <TextView
+                            style="@style/TextShowLife"
+                            android:text="@string/janota_booknumber" />
+                    </LinearLayout>
+
+                    <TextView style="@style/TextShowContentNoIcon" />
+
+                    <EditText
+                        android:id="@+id/et_janotaGongBookNum"
+                        style="@style/TextInputRight"
+                        android:background="@drawable/bg_input_et"
+                        android:imeOptions="actionNext" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/Linearlayout">
+
+                    <LinearLayout style="@style/LinearLayoutShowLife">
+
+                        <TextView
+                            style="@style/TextShowLife"
+                            android:text="@string/janota_finishDate" />
+                    </LinearLayout>
+
+                    <TextView style="@style/TextShowContentNoIcon" />
+
+                    <TextView
+                        android:id="@+id/tv_JanotaFinishDate"
+                        style="@style/TextShowRight"
+                        android:background="@drawable/bg_input_et" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/Linearlayout">
+
+                    <LinearLayout
+                        style="@style/LinearLayoutShowLife"
+                        android:layout_gravity="top">
+
+                        <TextView
+                            style="@style/TextShowLife"
+                            android:text="@string/janot_otherInfom" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/TextShowContentNoIcon"
+                        android:layout_gravity="top"
+                        android:paddingTop="5dp" />
+
+                    <com.lawyee.appservice.widget.ContentEditText
+                        android:id="@+id/editText"
+                        style="@style/TextInputRight"
+                        android:imeOptions="actionDone"
+                        android:gravity="top"
+                        android:lines="4" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/Linearlayout">
+
+                    <LinearLayout style="@style/LinearLayoutShowLife">
+
+                        <TextView
+                            style="@style/TextShowLife"
+                            android:text="@string/janota_upload" />
+                    </LinearLayout>
+
+                    <TextView style="@style/TextShowContentNoIcon" />
+
+                    <TextView
+                        android:id="@+id/tv_janotaUpload"
+                        style="@style/TextShowRight"
+                        android:background="@drawable/bg_input_et" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_janotaSubmit"
+                    style="@style/btnSubmit"
+                    android:text="@string/save" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </com.lawyee.appservice.widget.ScrollViewWith>
+</LinearLayout>
